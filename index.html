@@ -25,11 +25,12 @@
       justify-content: center;
       align-items: center;
       background-color: #161b22;
+      text-align: center;
     }
     .left h1 {
-      font-size: 2.5em;
+      font-size: 2.8em;
       color: #facc15;
-      text-shadow: 0 0 10px #facc15;
+      text-shadow: 0 0 15px #facc15;
       margin: 0;
     }
     .left h2 {
@@ -38,52 +39,56 @@
       font-weight: normal;
     }
     .left p {
-      font-size: 1.2em;
+      font-size: 1.1em;
       color: #8b949e;
     }
     .btn {
-      margin-top: 20px;
-      padding: 10px 25px;
+      margin-top: 25px;
+      padding: 12px 28px;
       font-weight: bold;
       background-color: #facc15;
+      color: #000;
       border: none;
-      border-radius: 20px;
+      border-radius: 25px;
       cursor: pointer;
-      box-shadow: 0 0 10px #facc15;
-      transition: transform 0.3s ease;
+      box-shadow: 0 0 15px #facc15;
+      transition: all 0.3s ease;
     }
     .btn:hover {
-      transform: scale(1.05);
+      transform: scale(1.08);
+      background-color: #ffe44d;
     }
     .right {
       flex: 1;
       background-color: #0d1117;
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 40px;
       padding: 40px;
-      justify-content: center;
       align-items: center;
-      gap: 30px;
+      justify-items: center;
     }
     .icon {
-      width: 80px;
-      height: 80px;
+      width: 70px;
+      height: 70px;
       object-fit: contain;
-      transition: transform 0.3s;
+      transition: transform 0.3s ease, filter 0.3s ease;
     }
     .icon:hover {
       transform: scale(1.15);
+      filter: drop-shadow(0 0 6px #facc15);
     }
     nav {
       width: 100%;
       text-align: center;
       background: #1f2937;
-      padding: 10px;
+      padding: 12px 0;
     }
     nav a {
-      margin: 0 15px;
+      margin: 0 20px;
       color: #d1d5db;
       text-decoration: none;
+      font-weight: 500;
     }
     nav a:hover {
       color: #facc15;
@@ -111,14 +116,14 @@
       <button class="btn">MY WORK</button>
     </div>
     <div class="right">
-      <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-      <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
-      <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aws/aws-original.svg" alt="AWS" />
-      <img class="icon" src="https://seeklogo.com/images/S/snowflake-logo-B6B1F6F8D7-seeklogo.com.png" alt="Snowflake" />
-      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png" alt="Analytics" />
-      <img class="icon" src="https://cdn.worldvectorlogo.com/logos/power-bi-1.svg" alt="Power BI" />
-      <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg" alt="Tableau" />
-      <img class="icon" src="https://www.vectorlogo.zone/logos/looker/looker-icon.svg" alt="Looker" />
+      <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+      <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+      <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aws/aws-original.svg" alt="AWS">
+      <img class="icon" src="https://seeklogo.com/images/S/snowflake-logo-B6B1F6F8D7-seeklogo.com.png" alt="Snowflake">
+      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2089/2089796.png" alt="Analytics">
+      <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Power_bi_logo_black.svg" alt="Power BI">
+      <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg" alt="Tableau">
+      <img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/free-looker-283186.png" alt="Looker">
     </div>
   </div>
 </body>
