@@ -65,8 +65,8 @@
       background-color: #ffffff;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-      gap: 20px;
-      padding: 30px;
+      gap: 10px;
+      padding: 20px;
       align-items: center;
       justify-items: center;
     }
@@ -96,10 +96,18 @@
     nav a:hover {
       color: #d97706;
     }
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
+    #resume {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    #resume h2 {
+      color: #d97706;
+      text-align: center;
+    }
+    #resume p, #resume ul {
+      line-height: 1.6;
+      font-size: 16px;
     }
   </style>
 </head>
@@ -129,9 +137,20 @@
       <a href="https://looker.com/" target="_blank"><img class="icon" src="https://cdn.worldvectorlogo.com/logos/looker.svg" alt="Looker"></a>
     </div>
   </div>
-  <section id="resume" style="padding: 60px 20px; max-width: 900px; margin: auto;">
-    <h2 style="color: #d97706; text-align: center;">Resume</h2>
-    <p style="text-align: center;">Data Analyst with around 3 years of experience translating complex datasets into clear, actionable insights across finance, healthcare, and operations. Proficient in SQL, Python, Power BI, Tableau, and cloud analytics with AWS and Snowflake.</p>
+  <section id="resume">
+    <h2>Resume</h2>
+    <ul>
+      <li><strong>Current Role:</strong> Data Analyst at CVS Health</li>
+      <li><strong>Skills:</strong> SQL, Python, Tableau, Power BI, AWS, Snowflake</li>
+      <li><strong>Education:</strong> MS in Data Science, New Jersey Institute of Technology (2024)</li>
+      <li><strong>Experience:</strong>
+        <ul>
+          <li>Built dashboards for healthcare, logistics, and urban planning projects</li>
+          <li>Integrated ETL pipelines using Python, SQL, Airflow, and dbt</li>
+          <li>Led reporting initiatives and created self-service BI solutions</li>
+        </ul>
+      </li>
+    </ul>
   </section>
 </body>
 </html>
