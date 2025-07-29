@@ -96,6 +96,22 @@
     nav a:hover {
       color: #d97706;
     }
+    #about {
+      padding: 80px 30px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    #about h2 {
+      color: #d97706;
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+    #about p {
+      font-size: 1.05em;
+      line-height: 1.8;
+      color: #374151;
+    }
     #resume {
       padding: 80px 30px;
       max-width: 900px;
@@ -117,7 +133,7 @@
 <body>
   <nav>
     <a href="#">Home</a>
-    <a href="#">About</a>
+    <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#resume">Resume</a>
     <a href="#">Contact</a>
@@ -140,9 +156,23 @@
       <a href="https://looker.com/" target="_blank"><img class="icon" src="https://cdn.worldvectorlogo.com/logos/looker.svg" alt="Looker"></a>
     </div>
   </div>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm Sai Prakash Kadiyala, a passionate and results-driven Data Analyst with 3+ years of experience transforming complex datasets into actionable insights across healthcare, finance, logistics, and operations domains. My work bridges the gap between raw data and strategic business decisions, with a strong foundation in SQL, Python, Power BI, and Tableau.<br><br>
+    Currently, I support enterprise-level analytics at CVS Health, where I develop end-to-end reporting solutions, automate data pipelines, and apply advanced forecasting models to support patient care and operational planning. Previously, I’ve delivered impactful dashboards and data integrations for companies like Accenture and UrbanStat, driving measurable improvements in logistics efficiency and city planning.<br><br>
+    I specialize in:<br>
+    - Interactive dashboard development (Power BI, Tableau)<br>
+    - Forecasting and statistical modeling (ARIMA, regression)<br>
+    - Data engineering with SQL, Python, and Airflow<br>
+    - ETL design from APIs, databases, and cloud systems (AWS, Snowflake)<br>
+    - KPI development and stakeholder collaboration in Agile teams<br><br>
+    I hold a Master’s in Data Science from New Jersey Institute of Technology and a Bachelor’s in Computer Science from KL University.
+    </p>
+  </section>
   <section id="resume">
     <h2>Resume</h2>
-    <iframe src="resume.docx"></iframe>
+    <iframe src="resume.pdf"></iframe>
   </section>
 </body>
 </html>
+
